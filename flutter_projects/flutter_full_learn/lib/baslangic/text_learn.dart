@@ -16,11 +16,14 @@ class TextLearnView extends StatelessWidget {
         textScaleFactor: 1,
         
         //style: ProjectStyles.welcomeStyle,
+
+        //theme okum önemli
         style: Theme.of(context).textTheme.headline5?.copyWith(
-          color: Colors.red,
+          //color: Colors.red,
+          color: ProjectColors.welcomeColor,
         ),
         )
-        
+        //Text(name ?? ''),
         ),
     );
   }
@@ -34,4 +37,8 @@ class ProjectStyles {
     fontSize: 16,
     color: Colors.lime
   );
+}
+
+class ProjectColors {
+  static Color welcomeColor = Colors.amber;
 }

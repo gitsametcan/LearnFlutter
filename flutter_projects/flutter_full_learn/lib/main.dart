@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_full_learn/baslangic/container_sized_box_learn.dart';
 import 'package:flutter_full_learn/baslangic/text_learn.dart';
 
 void main() {
@@ -12,11 +13,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: ThemeData(
-        
-        primarySwatch: Colors.blue,
-      ),
-      home: TextLearnView(),
+      theme: ThemeData.dark(),
+      home: ContainerSizedBoxLearn(),
     );
   }
 }

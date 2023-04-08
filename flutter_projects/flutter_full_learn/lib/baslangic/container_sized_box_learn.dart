@@ -57,9 +57,6 @@ class ProjectContDeco extends BoxDecoration {
                 offset: Offset(0.1, 1),
                 blurRadius: 12
               )],
-              border: Border.all(width: 100, color: Colors.white),
-  ) {
-    // TODO: implement 
-    throw UnimplementedError();
-  }
+              //border: Border.all(width: 100, color: Colors.white),
+  );
 }

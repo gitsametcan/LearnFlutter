@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_full_learn/baslangic/button_learn.dart';
 import 'package:flutter_full_learn/baslangic/container_sized_box_learn.dart';
 import 'package:flutter_full_learn/baslangic/scaffold_learn.dart';
 import 'package:flutter_full_learn/baslangic/text_learn.dart';
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData.dark(),
-      home: const ScaffoldLearn(),
+      home: const ButtonLearn(),
     );
   }
 }

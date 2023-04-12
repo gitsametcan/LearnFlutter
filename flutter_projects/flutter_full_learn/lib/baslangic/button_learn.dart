@@ -11,13 +11,28 @@ class ButtonLearn extends StatelessWidget {
         children: [
           TextButton(
           onPressed: (){},
-          child: const Text('button'),
+          style: ButtonStyle(
+            backgroundColor: MaterialStateProperty.resolveWith((states) {
+              if(states.contains(MaterialState.pressed)){
+                return Colors.amber;
+              }
+
+              return Colors.blue;
+            })
+          ),
+          child: Text('button', style: Theme.of(context).textTheme.subtitle1),
         ),
 
-        //1-ElevatedButton(onPressed: onPressed, child: child)
+        const ElevatedButton(onPressed: null, child: Text('asd')),
         //2-IconButton(onPressed: onPressed, icon: icon)
-        //3-FloatingActionButton(onPressed: onPressed)
-        //4-OutlinedButton(onPressed: onPressed, child: child)
+        FloatingActionButton(onPressed: () {},
+        child: const Icon(Icons.add_a_photo),
+        ),
+        OutlinedButton(
+          style: OutlinedButton.styleFrom(
+            backgroundColor: Colors.green
+          ),
+          onPressed: (){}, child: const Text('asd')),
 
         InkWell(
           onTap: () {},

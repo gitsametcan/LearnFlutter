@@ -30,17 +30,31 @@ class ButtonLearn extends StatelessWidget {
         ),
         OutlinedButton(
           style: OutlinedButton.styleFrom(
-            backgroundColor: Colors.green
+            backgroundColor: Colors.green,
+            shape: const CircleBorder(),
+            padding: const EdgeInsets.all(10)
           ),
           onPressed: (){}, child: const Text('asd')),
+        OutlinedButton.icon(onPressed: (){}, icon: const Icon(Icons.abc), label: const Text("data")),
 
         InkWell(
           onTap: () {},
           child: const Text('inkwell'),
-        )
+        ),
+        Container(
+          height: 200,
+          color: Colors.white,
+        ),
+        ElevatedButton(
+          style: ElevatedButton.styleFrom(),
+          onPressed: (){}, child: const Text('asdasasd')
+        ),
 
         ],
       ),
     );
   }
 }
+
+//Borders
+//CircleBorder(), RoundedRectangleBorder()
